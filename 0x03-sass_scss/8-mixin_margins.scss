@@ -1,0 +1,12 @@
+/* Assign margins using a mixin */
+@mixin meseek($parameter) {
+  margin-left: $parameter;
+  margin-right: $parameter;
+}
+body {
+  @include meseek(10px);
+}
+
+div {
+  @include meseek(15px);
+}
